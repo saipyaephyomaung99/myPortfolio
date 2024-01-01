@@ -1,0 +1,529 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* global color */
+:root{
+    --bg-color:black;
+    --main-color:red;
+    --secondary-color:goldenrod;
+    --text-color:white;
+}
+
+/* customize scrollbar */
+html::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    width:5px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color:var(--secondary-color);
+    border-radius: 20%;
+}
+
+::selection{
+    color:var(--bg-color);
+    background-color: var(--secondary-color);
+}
+
+body{
+   background-color: black; 
+   color:var(--text-color);
+}
+
+/* navbar start */
+    .navBar{
+        padding:2vh 4vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--secondary-color);
+        position: sticky;
+        top:0px;
+        z-index:100;
+        box-shadow: 0px 1px 5px rgb(193, 185, 185);
+    }
+
+    .leftNavBar{
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 2.5em;
+        text-shadow: 3px 2px 8px black;
+    }
+
+    .rigthNavBar a{
+        color:var(--text-color);
+        margin-right: 1.5vw;
+        font-size: 1.3em;
+        position: relative;
+        font-weight: 600;
+    }
+
+    .rigthNavBar a:hover{
+        text-shadow: 3px 2px 5px black;
+    }
+
+    .rigthNavBar a::after{
+        content: "";
+        height: 2px;
+        width:0%;
+        position:absolute;
+        bottom:-4px;
+        left: 0px;
+        background-color: var(--main-color);
+        transition: 0.5s;
+    }
+
+    .rigthNavBar a:hover::after{
+        width:100%;
+    }
+
+    .rigthNavBar li{
+        display: inline-block;
+    }
+
+    .rigthNavBar .fa-solid{
+        margin-right: 0.5vh;
+    }
+/* navbar end */
+
+/* home start */
+    .home{
+        display:flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .me{
+        width:45%;
+        padding-left:5vh;
+    }
+
+    .me p{
+        color:rgb(167, 167, 167);
+        font-size:1.1em;
+        margin-bottom: 1vh;
+    }
+
+    .me h1{
+        font-size:2.5em;
+        font-weight:bolder;
+        text-shadow: 2px 1px 5px rgb(193, 185, 185);
+    }
+
+    .me h2{
+        font-size: 1.8em;
+        margin-top: 1vh;
+        margin-bottom: 4vh;
+        text-shadow: 1px 1px 5px rgb(193, 185, 185);
+    }
+
+    .me span{
+        color:rgb(167, 167, 167);
+        font-size: 1.1em;
+    }
+
+    .cv{
+        display: block;
+        margin:2vh 0vw;
+        background-color: var(--main-color);
+        color:var(--text-color);
+        width:20%;
+        text-align: center;
+        padding:1vh 1vw;
+        border-radius: 5%;
+        transition: 0.5s;
+    }
+
+    .cv:hover{
+        background-color: rgb(162, 0, 0);
+    }
+
+    .photo{
+        width:45%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .photo img{
+        width:65%;
+        border-radius: 50%;
+        border:3px solid var(--secondary-color);
+        padding:1vh;
+        transition:0.5s;
+    }
+
+    .photo img:hover{
+        filter:contrast(110%);
+        width:68%;
+    }
+/* home end */
+
+/* language start */
+    .language{
+        padding:5vh 0vw;
+    }
+
+    .title{
+        width:90%;
+        margin:auto;
+        padding:2vh 0vw;
+        border-bottom: 1px solid var(--main-color);
+        font-size: 2em;
+    }
+
+    .box {
+        width: 90%;
+        margin:auto;
+        padding:5vh 0vw;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card{
+        width:40%;
+        margin:2vh 0vw;
+        text-align: center;
+        padding:3vh 0vw;
+        background-color: var(--secondary-color);
+        border-radius: 5px;
+        box-shadow: 2px 2px 8px rgb(193, 185, 185);
+    }
+
+    .card h4{
+        font-size: 1.4em;
+        text-align: center;
+        margin-bottom: 2vh;
+        text-shadow: 1px 2px 5px black;
+    }
+
+    .slide{
+        width: 80%;
+        accent-color: var(--main-color);
+    }
+
+    .box2{
+        width:90%;
+        margin:auto;
+        text-align: center;
+        font-size: 0.9em;
+        margin-bottom: 3vh;
+    }
+
+    .certi{
+        padding:4vh 0vw;
+    }
+
+    .certiImage{
+        width:45%;
+    }
+
+    .certiImage img{
+        width:100%;
+        border:5px solid var(--secondary-color);
+        border-radius: 5px;
+        padding:0.5vh;
+        transition: 0.5s;
+    }
+
+    .certiImage img:hover{
+        transform: translate(0px ,-5px) scale(1.02);
+    }
+/* language end */
+
+/* work start */
+    .work{
+        padding:5vh 0vw;
+    }
+
+    .projects{
+        width:90%;
+        margin: 5vh auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .item{
+        width:40%;
+        background-color: var(--secondary-color);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding:3vh 0vw;
+        box-shadow: 1px 1px 8px rgb(193, 185, 185);
+        border-radius: 5px;
+        margin:2vh 0vw;
+    }
+
+    .name{
+        width:70%;
+        text-align: center;
+        font-size: 1.5em;
+        text-shadow: 1px 2px 5px black;
+    }
+
+    .item a{
+        width:20%;
+        background-color: var(--main-color);
+        text-align: center;
+        color:var(--text-color);
+        padding:1vh 0vw;
+        border-radius: 5px;
+        box-shadow: 1px 1px 5px rgb(71, 71, 71);
+        transition: 0.5s;
+    }
+
+    
+
+    .fa-eye{
+        margin-right: 0.5vh;
+    }
+
+    .item a:hover{
+        background-color: rgb(162, 0, 0);
+    }
+/* work end */
+
+/* contact start */
+    .contact{
+        padding:5vh 0vw;
+    }
+
+    .tb{
+        width:80%;
+        margin:5vh auto;
+        border-collapse: collapse;
+        font-size: 1.3em;
+        vertical-align: center;
+        border: solid 2px var(--secondary-color);
+        box-shadow: 2px 2px 5px rgb(125, 122, 122);
+    }
+
+    thead{
+        background-color: var(--secondary-color);
+        text-shadow: 1px 2px 5px black;
+    }
+
+    tbody tr{
+        background-color: rgb(215, 215, 215);
+        color:var(--bg-color);
+    }
+
+    th,td{
+        padding:3vh 2vw;
+        font-weight: bold;
+    }
+
+    td a{
+        color:black;
+    }
+
+    tbody tr:nth-child(odd){
+        background-color: rgb(168, 167, 167); ;
+    }
+
+    tbody tr:hover{
+        background-color: grey;
+    }
+/* contact end */
+
+/* responsive css */
+@media (max-width:960px) {
+    .leftNavBar{
+        font-size: 2em;
+    }
+
+    .rigthNavBar a{
+        font-size: 1.1em;
+    }
+
+    .me p{
+        font-size: 1em;
+    }
+
+    .me h1{
+        font-size: 2.2em;
+    }
+
+    .me h2{
+        font-size: 1.5em;
+    }
+
+    .me span{
+        font-size: 0.9em;
+    }
+
+    .cv{
+        margin:3vh 0vw;
+        font-size: 0.8em;
+        width: 25%;
+    }
+    
+    .title{
+        font-size: 1.5em;
+    }
+
+    .box2{
+        font-size: 0.7em;
+    }
+
+    .name{
+        font-size: 1.2em;
+    }
+
+    .item a{
+        font-size: 0.8em;
+    }
+
+    .tb{
+        font-size: 1.1em;
+    }
+}
+@media (max-width:850px) {
+    .rigthNavBar a{
+        font-size: 1em;
+    }
+
+    .home{
+        flex-direction: column-reverse;
+        height: auto;
+    }
+
+    .me{
+        width: 80%;
+        margin-top: 3vh;
+    }
+
+    .photo{
+        width:50%;
+        margin:5vh auto;
+    }
+
+    .photo img{
+        width:70%;
+    }
+
+    .me p{
+        font-size: 0.9em;
+    }
+
+    .me h1{
+        font-size: 2em;
+    }
+
+    .me h2{
+        font-size: 1.3em;
+    }
+
+    .me span{
+        font-size: 0.8em;
+    }
+
+    .title{
+        font-size: 1.3em;
+    }
+
+    .card h4{
+        font-size: 1.2em;
+    }
+}
+@media(max-width:760px){
+    .tb{
+        font-size: 0.9em;
+    }
+
+    .name{
+        font-size: 1em;
+    }
+
+    .item a{
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:650px) {
+    .language,.work,.certi,.contact{
+        padding:2vh 0vw;
+    }
+}
+
+@media (max-width:580px) {
+    .leftNavBar{
+        font-size: 1.5em;
+    }
+
+    .rigthNavBar a{
+        font-size: 0.8em;
+    }
+
+    .me p{
+        font-size: 0.8em;
+    }
+
+    .me h1{
+        font-size: 1.8em;
+    }
+
+    .me h2{
+        font-size: 1.1em;
+    }
+
+    .title{
+        font-size: 1.1em;
+    }
+
+    .card h4{
+        font-size: 1em;
+    }
+
+    .box2{
+        font-size: 0.5em;
+    }
+
+    .name{
+        font-size: 0.8em;
+    }
+
+    .tb{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:550px) {
+    .card{
+        width:90%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .card h4{
+        width:25%;
+        font-size:1.1em;
+    }
+
+    .slide{
+        width:65%;
+    }
+
+    .name{
+        width:65%;
+    }
+    
+    .item a{
+        width:25%;
+    }
+}
