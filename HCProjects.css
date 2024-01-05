@@ -134,8 +134,257 @@ body{
 }
 
 .line{
-    width:90%;
+    width:95%;
     margin: auto;
     border-bottom: 1px solid var(--main-color);
 }
 /* projects end */
+
+/* responsive start */
+@media (max-width:1050px) {
+    .description h2{
+        font-size: 1.7em;
+    }
+
+    .description div{
+        font-size: 1em;
+    }
+
+    .description p{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:950px) {
+    .leftNavBar{
+        font-size: 2em;
+    }
+
+    .rightNavBar{
+        font-size: 1.2em;
+    }
+
+    .description h2{
+        font-size: 1.5em;
+    }
+
+    .description div{
+        font-size: 0.8em;
+    }
+
+    .description p{
+        font-size: 0.7em;
+    }
+
+    .description a{
+        width: 30%;
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:900px) {
+    .leftNavBar{
+        font-size: 1.9em;
+    }
+
+    .rightNavBar{
+        font-size: 1.1em;
+    }
+
+    .card{
+        padding:3vh 0vw;
+    }
+
+    .description h2{
+        font-size: 1.4em;
+        margin:1vh 0vw;
+    }
+
+    .description div{
+        margin:2vh 0vw;
+    }
+
+    .description p{
+        margin:1vh 0vw;
+    }
+
+    .projects{
+        padding:3vh 0vw;
+    }
+}
+
+@media (max-width:800px) {
+    .leftNavBar{
+        font-size: 1.7em;
+    }
+
+    .rightNavBar{
+        font-size: 1em;
+    }
+
+    .description h2{
+        font-size: 1.2em;
+    }
+
+    .description div{
+        font-size: 0.7em;
+    }
+
+    .description p{
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:700px) {
+    .description a{
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width:650px) {
+    .description h2{
+        font-size: 1.1em;
+    }
+
+    .description div{
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:550px) {
+    .navBar{
+        padding:1vh 3vw;
+    }
+
+    .leftNavBar{
+        font-size: 1.5em;
+    }
+
+    .rightNavBar{
+        font-size: 0.9em;
+    }
+
+    .description a{
+        width:25%;
+        font-size: 0.4em;
+    }
+}
+
+@media (max-width:530px) {
+    .leftNavBar{
+        font-size: 1.3em;
+    }
+
+    .rightNavBar{
+        font-size: 0.8em;
+    }
+
+    .description h2{
+        font-size: 1em;
+    }
+
+    .description div{
+        font-size: 0.5em;
+    }
+
+    .description p{
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width:480px) {
+    .card{
+        flex-direction: column;
+        padding:2vh 0vw;
+    }
+
+    .content{
+        width:75%;
+    }
+
+    .description{
+        width:75%;
+        padding:2vh 3vw;
+        margin:1vh 0vw;
+    }
+
+    .description h2{
+        font-size: 1.2em;
+    }
+
+    .description div{
+        font-size: 0.7em;
+    }
+
+    .description p{
+        font-size: 0.6em;
+    }
+
+    .description a{
+        width:30%;
+        font-size: 0.5em;
+    }
+}
+
+@media (max-width:450px) {
+    .description h2{
+        font-size: 1em;
+    }
+
+    .description div{
+        font-size: 0.6em;
+    }
+
+    .description p{
+        font-size: 0.5em;
+    }
+
+    .description a{
+        width:25%;
+    }
+
+    .content , .description{
+        width:85%;
+    }
+
+    .line{
+        width:90%;
+    }
+}
+
+@media (max-width:400px) {
+    .leftNavBar{
+        font-size: 1.2em;
+    }
+
+    .rightNavBar{
+        font-size: 0.7em;
+    }
+
+    .description h2{
+        font-size: 0.9em;
+    }
+
+    .description div{
+        font-size: 0.5em;
+        margin:1vh 0vw;
+    }
+}
+
+@media (max-width:320px) {
+    .leftNavBar{
+        font-size: 1.1em;
+    }
+
+    .rightNavBar{
+        font-size: 0.6em;
+    }
+
+    .content , .description {
+        width:90%;
+    }
+
+    .description a{
+        font-size: 0.4em;
+    }
+}
