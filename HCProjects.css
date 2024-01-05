@@ -1,0 +1,141 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin:0;padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* global color */
+:root{
+    --bg-color:black;
+    --main-color:red;
+    --secondary-color:goldenrod;
+    --text-color:white;
+}
+
+/* customize scrollbar */
+html::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    width:5px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color:var(--secondary-color);
+    border-radius: 20%;
+}
+
+::selection{
+    color:var(--bg-color);
+    background-color: var(--secondary-color);
+}
+
+body{
+   background-color: black; 
+   color:var(--text-color);
+}
+
+/* navbar start */
+    .navBar{
+        padding:2vh 4vw;
+        background-color: var(--secondary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top:0px;
+        z-index: 100;
+        box-shadow: 0px 1px 5px rgb(193, 185, 185);
+    }
+
+    .leftNavBar{
+        font-family: 'Silkscreen', sans-serif;
+        font-size: 2.5em;
+        text-shadow: 3px 2px 8px black;
+    }
+
+    .rightNavBar{
+        font-size: 1.5em;
+        font-weight: 600;
+        text-shadow: 3px 2px 5px black;
+    }
+/* navbar end */
+
+/* projects start */
+.projects{
+    padding:5vh 0vw;
+}
+
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:5vh 0vw;
+}
+
+.content{
+    width:45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content video , .content img{
+    border:2px solid var(--secondary-color);
+    border-radius: 5px;
+    width: 90%;
+    padding:0.5vh;
+}
+
+.description{
+    width:45%;
+    background-color:var(--secondary-color);
+    padding:3vh 1vw;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px rgb(71, 71, 71);
+    color:var(--bg-color)
+}
+
+.description h2{
+    font-size: 2em;
+    margin:2vh 0vw;
+}
+
+.description div{
+    margin:3vh 0vw;
+    font-size: 1.2em;
+}
+
+.description p{
+    margin:2vh 0vw;
+}
+
+.description a{
+    background-color: var(--main-color);
+    display: block;
+    margin:auto;
+    width: 40%;
+    padding:1vh 0vw;
+    color:var(--text-color);
+    font-size: 0.8em;
+    border-radius: 5px;
+    box-shadow: 1px 1px 5px rgb(71, 71, 71);
+    transition: 0.5s;
+}
+
+.description a:hover{
+    background-color: rgb(162, 0, 0);
+}
+
+.line{
+    width:90%;
+    margin: auto;
+    border-bottom: 1px solid var(--main-color);
+}
+/* projects end */
