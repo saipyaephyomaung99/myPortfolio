@@ -1,0 +1,119 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+
+*{
+    margin:0;padding:0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Josefin Sans', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* global color */
+:root{
+    --bg-color:black;
+    --secondary-color:goldenrod;
+    --main-color:red;
+    --text-color:white;
+}
+
+/* customize scrollbar */
+html::-webkit-scrollbar{
+    background-color: var(--bg-color);
+    width:5px;
+}
+
+html::-webkit-scrollbar-thumb{
+    background-color:var(--secondary-color);
+    border-radius: 20%;
+}
+
+::selection{
+    color:var(--bg-color);
+    background-color: var(--secondary-color);
+}
+
+body{
+    background-color: var(--bg-color);
+    color:var(--text-color);
+}
+
+/* navBar start */
+.navBar{
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:2vh 3vw;
+    position: sticky;
+    top:0px;
+    z-index: 100;
+    box-shadow: 0px 1px 5px rgb(193, 185, 185);
+}
+
+.leftNavBar{
+    font-family: 'Silkscreen', sans-serif;
+    font-size: 2.5em;
+    text-shadow: 3px 2px 8px black;
+    font-weight: 900;
+}
+
+.rightNavBar{
+    font-size: 1.3em;
+    font-weight: 600;
+    text-shadow: 3px 2px 5px black;
+}
+
+.fa-solid{
+    margin-right: 2px;
+}
+/* navBar end */
+
+/* auth start */
+    .title{
+        width:90%;
+        margin:15px auto 0px auto;
+        font-size: 1.8em;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    .title span{
+        font-size: 0.6em;
+    }
+
+    .auth{
+        width:90%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin:auto;
+        padding:20px 0px;
+    }
+
+    .authCard{
+        width:45%;
+        background-color: var(--secondary-color);
+        margin:10px auto;
+        box-shadow: 5px 4px 5px rgb(71, 71, 71);
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    .authCard video{
+        width:100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        box-shadow: 0px 1px 5px rgb(71, 71, 71);
+    }
+
+    .authCard p{
+        font-size: 1.1em;
+        color:var(--bg-color);
+        font-weight: 900;
+        width:95%;
+        margin:12px auto;
+    }
+/* auth end */
