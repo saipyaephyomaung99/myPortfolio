@@ -88,14 +88,13 @@ body{
         font-size: 1.6em;
         color:var(--bg-color);
         font-weight: 900;
-        
+        text-shadow: 3px 2px 5px rgb(159, 159, 159);
     }
 
     .card img{
-        width:90%;
+        width:100%;
         margin:15px 0px;
-        border-radius: 5px;
-        box-shadow: 2px 1px 5px rgb(71, 71, 71);
+        box-shadow: 0px 1px 10px rgb(71, 71, 71);;
     }
 
     .description{
@@ -113,7 +112,7 @@ body{
         width:50%;
         margin-top:10px;
         padding:5px 0px;
-        border-radius: 10px;
+        border-radius: 20px;
         font-size: 0.9em;
         transition:0.5s;
     }
@@ -125,4 +124,185 @@ body{
     .fa-solid{
         margin-right: 2px;
     }
+
+    .line{
+        width:90%;
+        
+    }
  /* projects end */
+
+ @media (max-width:1000px) {
+    .navBar{
+        padding:2vh 3vw;
+    }
+ }
+
+ @media (max-width:900px) {
+    .leftNavBar{
+        font-size: 2.3em;
+    }
+
+    .rightNavBar{
+        font-size: 1.3em;
+    }
+
+    .title{
+        font-size:1.5em;
+    }
+
+    .description{
+        font-size: 1em;
+    }
+ }
+
+ @media (max-width:800px) {
+    .projects{
+        flex-direction: column;
+        padding:10px 15px;
+    }
+    
+    .card{
+        width:80%;
+        margin:20px auto;
+    }
+
+    .title{
+        font-size:1.6em;
+    }
+
+    .description{
+        font-size: 1.1em;
+    }
+ }
+
+ @media (max-width:700px) {
+    .leftNavBar{
+        font-size: 2.1em;
+    }
+
+    .rightNavBar{
+        font-size: 1.2em;
+    }
+ }
+
+ @media (max-width:600px) {
+    .navBar{
+        padding:2vh 2vw;
+    }
+
+    .card{
+        width:85%;
+    }
+
+    .title{
+        font-size:1.5em;
+    }
+
+    .description{
+        font-size: 1em;
+    }
+
+    .view{
+        font-size: 0.8em;
+    }
+ }
+
+ @media (max-width:500px) {
+    .navBar{
+        padding:1vh 2vw;
+    }
+
+    .leftNavBar{
+        font-size:1.8em;
+    }
+
+    .rightNavBar{
+        font-size: 1em;
+    }
+
+    .card{
+        width:90%;
+    }
+
+    .title{
+        font-size:1.3em;
+    }
+
+    .description{
+        font-size: 0.9em;
+    }
+
+    .view{
+        font-size: 0.7em;
+    }
+ }
+
+ @media (max-width:400px) {
+    .leftNavBar{
+        font-size:1.6em;
+    }
+
+    .rightNavBar{
+        font-size: 0.9em;
+    }
+
+    .card{
+        width:95%;
+    }
+
+    .title{
+        font-size:1.2em;
+    }
+
+    .description{
+        font-size: 0.85em;
+    }
+
+    .view{
+        font-size: 0.65em;
+    }
+ }
+
+ @media (max-width:350px) {
+    .leftNavBar{
+        font-size:1.5em;
+    }
+
+    .rightNavBar{
+        font-size: 0.8em;
+    }
+
+    .title{
+        font-size:1.1em;
+    }
+
+    .description{
+        font-size: 0.8em;
+    }
+
+    .view{
+        font-size: 0.6em;
+    }
+ }
+
+ @media (max-width:280px) {
+    .leftNavBar{
+        font-size:1.3em;
+    }
+
+    .rightNavBar{
+        font-size: 0.6em;
+    }
+
+    .title{
+        font-size:1em;
+    }
+
+    .description{
+        font-size: 0.75em;
+    }
+
+    .view{
+        font-size: 0.55em;
+    }
+ }
