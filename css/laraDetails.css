@@ -117,3 +117,117 @@ body{
         margin:12px auto;
     }
 /* auth end */
+
+/* responsive start */
+@media (max-width:950px) {
+    .leftNavBar{
+        font-size: 2.1em;
+    }
+
+    .rightNavBar{
+        font-size: 1.1em;
+    }
+
+    .title{
+        font-size: 1.5em;
+        margin:10px auto 0px auto;
+    }
+
+    .authCard{
+        margin:5px auto 10px auto;
+    }
+
+    .authCard p{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:900px) {
+    .leftNavBar{
+        font-size: 2em;
+    }
+
+    .title{
+        font-size: 1.2em;
+    }
+
+    .title span{
+        font-size: 0.7em;
+    }
+
+    .authCard p{
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width:800px) {
+    .navBar{
+        padding:1vh 2vw;
+    }
+
+    .leftNavBar{
+        font-size: 1.8em;
+    }
+
+    .rightNavBar{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:650px) {
+    .leftNavBar{
+        font-size: 1.6em;
+    }
+
+    .rightNavBar{
+        font-size: 0.95em;
+    }
+
+    .title{
+        font-size: 1.1em;
+    }
+
+    .authCard p{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:600px) {
+
+    .authCard{
+        width:90%;
+    }
+}
+
+@media (max-width:500px) {
+    .leftNavBar{
+        font-size: 1.4em;
+    }
+
+    .rightNavBar{
+        font-size: 0.85em;
+    }
+
+    .title{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:350px) {
+    .leftNavBar{
+        font-size: 1.3em;
+    }
+
+    .rightNavBar{
+        font-size: 0.7em;
+    }
+
+    .title{
+        font-size: 0.9em;
+    }
+
+    .authCard p{
+        font-size: 0.75em;
+    }
+}
+/* responsive end */
